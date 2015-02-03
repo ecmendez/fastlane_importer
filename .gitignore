@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# Other specific files or directories to be ignored
+/config/database.yml
+/.idea/*.*
