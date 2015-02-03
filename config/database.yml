@@ -13,7 +13,7 @@
 
 development: &main_settings
   adapter: mysql
-  database: nsfgrfp_2015_development
+  database: nsfgrfp_rails4_development
   username: root
   password:
   host: localhost
@@ -21,7 +21,7 @@ development: &main_settings
 
 test: &test_settings
   <<: *main_settings
-  database: nsfgrfp_2015_test
+  database: nsfgrfp_rails4_test
 panelists:
   adapter: mysql
   database: panelists_development

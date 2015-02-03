@@ -1,32 +1,244 @@
+GIT
+  remote: git@gitlab.asee.org:asee-it/admin-engine.git
+  revision: 0d9f97ce353441df62f07c91098c1f11ea3b19df
+  specs:
+    admin (1.0.1)
+      activeresource
+      calendar_date_select
+      haml-rails
+      log4r
+      make_resourceful
+      newrelic_rpm
+      pdf-toolkit
+      prototype-rails
+      rails (>= 4.0.0)
+      rake (= 10.1.1)
+      simple-navigation (= 3.11.0)
+      will_paginate (~> 3.0)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/apply-engine.git
+  revision: 49c082639198a7760ec1c35187dd67ccdee4ae96
+  specs:
+    apply (1.0.0)
+      activeresource
+      acts_as_versioned
+      admin
+      asee_utilities
+      calendar_date_select
+      dynamic_form
+      file_column
+      haml-rails
+      make_resourceful (>= 1.0.4)
+      mixable_engines
+      pdf-toolkit
+      prototype-rails
+      rails (>= 4.0)
+      rake (= 10.1.1)
+      rtex
+      will_paginate
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/asee-utilities.git
+  revision: b42dd6815cf7cf6fa10a8b7968c91de84ea91ff0
+  specs:
+    asee_utilities (0.0.1)
+      rails (>= 4.0)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/authenticated-system.git
+  revision: 11a26d461deb7ccc815a3d3a719e37769ae691c4
+  specs:
+    authenticated_system (0.0.1)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/cms-engine.git
+  revision: a6a869a50fbca826586d370020b88f85b656dd95
+  specs:
+    cms (0.0.1)
+      actionpack-page_caching
+      acts_as_list
+      acts_as_tree
+      acts_as_versioned
+      calendar_date_select
+      ckeditor
+      dynamic_form
+      file_column
+      haml-rails
+      make_resourceful
+      rails (>= 4.0)
+      simple-navigation (= 3.11.0)
+      will_paginate (~> 3.0)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/deploy.git
+  revision: cb2e4c186a2701f9b66c661425dda9b6fd0ef80e
+  specs:
+    deploy (0.0.4)
+      capistrano (~> 2.11)
+      git (= 1.2.8)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/extranet-engine.git
+  revision: 6bafc97121d32861467840b16883906a798cda71
+  specs:
+    extranet (0.0.1)
+      aasm
+      admin
+      asee_utilities
+      authenticated_system
+      awesome_nested_set
+      calendar_date_select
+      deploy
+      dynamic_form
+      file_column
+      haml-rails
+      make_resourceful (~> 1.0.2)
+      rails (~> 4.0)
+      simple-navigation
+      will_paginate
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/helpdesk-engine.git
+  revision: 6a562f1030451bbb2a0c2a7c33dfb607143f1066
+  specs:
+    helpdesk (0.0.1)
+      admin
+      asee_utilities
+      authenticated_system
+      deploy
+      file_column
+      haml-rails
+      make_resourceful
+      rails (>= 4.0)
+      viewpoint (= 0.1.27)
+
+GIT
+  remote: git@gitlab.asee.org:asee-it/reporting-engine.git
+  revision: 2ccc269df687ec4366d27c320c2bdaa17b0c9e89
+  specs:
+    reporting (1.0.0)
+      rails (>= 4.0.0)
+      simple-navigation (= 3.11.0)
+
+GIT
+  remote: https://github.com/asee/acts_as_versioned.git
+  revision: cf2f1f554b96903544ed1b4cc546203f5ba89f16
+  specs:
+    acts_as_versioned (3.2.1)
+      activerecord
+
+GIT
+  remote: https://github.com/asee/calendar_date_select.git
+  revision: d83c8678b6936430c22abaca3f0d2882b802ae97
+  specs:
+    calendar_date_select (1.16.2)
+      prototype-rails
+
+GIT
+  remote: https://github.com/asee/file_column.git
+  revision: 68c19e1bf4c163367e197cbe41f45f02bca4bc40
+  specs:
+    file_column (0.4.0)
+
+GIT
+  remote: https://github.com/asee/lp_select
+  revision: 6cffb2d36cb41df0b50ff7d5831e70b0e1d5c697
+  branch: ruby-2x
+  specs:
+    lp_select (0.0.1)
+
+GIT
+  remote: https://github.com/asee/make_resourceful
+  revision: cfe2362093934b016db8aa41301d6bb07f9b126f
+  specs:
+    make_resourceful (1.0.4)
+
+GIT
+  remote: https://github.com/asee/massive_match
+  revision: f173b2ff78adc7f627468cad0c47e1a2d5857c4a
+  specs:
+    massive_match (0.3.0)
+      lp_select
+
+GIT
+  remote: https://github.com/asee/mixable_engines.git
+  revision: 215f11a58139fcf153f71cee390b87a4ca30b556
+  specs:
+    mixable_engines (0.1.1)
+      activesupport (>= 3.0.0)
+      i18n
+
+GIT
+  remote: https://github.com/asee/rtex
+  revision: 971798921bef7fd1fef8c0c4d25dc9ccfebc4138
+  specs:
+    rtex (2.1.1)
+      rails (> 3.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    actionmailer (4.0.4)
-      actionpack (= 4.0.4)
+    aasm (4.0.8)
+    actionmailer (4.1.4)
+      actionpack (= 4.1.4)
+      actionview (= 4.1.4)
       mail (~> 2.5.4)
-    actionpack (4.0.4)
-      activesupport (= 4.0.4)
-      builder (~> 3.1.0)
-      erubis (~> 2.7.0)
+    actionpack (4.1.4)
+      actionview (= 4.1.4)
+      activesupport (= 4.1.4)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activemodel (4.0.4)
-      activesupport (= 4.0.4)
-      builder (~> 3.1.0)
-    activerecord (4.0.4)
-      activemodel (= 4.0.4)
-      activerecord-deprecated_finders (~> 1.0.2)
-      activesupport (= 4.0.4)
-      arel (~> 4.0.0)
-    activerecord-deprecated_finders (1.0.3)
-    activesupport (4.0.4)
+    actionpack-page_caching (1.0.2)
+      actionpack (>= 4.0.0, < 5)
+    actionview (4.1.4)
+      activesupport (= 4.1.4)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+    activemodel (4.1.4)
+      activesupport (= 4.1.4)
+      builder (~> 3.1)
+    activerecord (4.1.4)
+      activemodel (= 4.1.4)
+      activesupport (= 4.1.4)
+      arel (~> 5.0.0)
+    activeresource (4.0.0)
+      activemodel (~> 4.0)
+      activesupport (~> 4.0)
+      rails-observers (~> 0.1.1)
+    activesupport (4.1.4)
       i18n (~> 0.6, >= 0.6.9)
-      minitest (~> 4.2)
-      multi_json (~> 1.3)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
       thread_safe (~> 0.1)
-      tzinfo (~> 0.3.37)
-    arel (4.0.2)
-    builder (3.1.4)
+      tzinfo (~> 1.1)
+    acts_as_list (0.6.0)
+      activerecord (>= 3.0)
+    acts_as_tree (2.1.0)
+      activerecord (>= 3.0.0)
+    addressable (2.3.6)
+    arel (5.0.1.20140414130214)
+    awesome_nested_set (3.0.2)
+      activerecord (>= 4.0.0, < 5)
+    builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
+    capistrano (2.15.5)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
+    ckeditor (4.1.1)
+      cocaine
+      orm_adapter (~> 0.5.0)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.5)
+      climate_control (>= 0.0.3, < 1.0)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -34,43 +246,109 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.0)
+    columnize (0.9.0)
+    css_parser (1.3.6)
+      addressable
+    debugger-linecache (1.2.0)
+    dynamic_form (1.1.4)
     erubis (2.7.0)
     execjs (2.2.2)
+    faker (1.4.3)
+      i18n (~> 0.5)
+    git (1.2.8)
+    haml (4.0.6)
+      tilt
+    haml-rails (0.8.2)
+      actionpack (>= 4.0.1)
+      activesupport (>= 4.0.1)
+      haml (>= 3.1, < 5.0)
+      html2haml (>= 1.0.1)
+      railties (>= 4.0.1)
+    handsoap (1.4.0)
+    highline (1.6.21)
     hike (1.2.3)
+    html2haml (2.0.0)
+      erubis (~> 2.7.0)
+      haml (~> 4.0.0)
+      nokogiri (~> 1.6.0)
+      ruby_parser (~> 3.5)
+    htmlentities (4.3.1)
+    httpclient (2.6.0.1)
     i18n (0.7.0)
-    jbuilder (1.5.3)
-      activesupport (>= 3.0.0)
-      multi_json (>= 1.2.0)
-    jquery-rails (3.1.2)
-      railties (>= 3.0, < 5.0)
-      thor (>= 0.14, < 2.0)
+    icalendar (1.1.6)
     json (1.8.2)
+    json_pure (1.7.4)
+    libv8 (3.16.14.7)
+    log4r (1.1.10)
+    machinist (2.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    metaclass (0.0.4)
+    method_source (0.8.2)
     mime-types (1.25.1)
-    minitest (4.7.5)
+    mini_portile (0.6.2)
+    minitest (5.5.1)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
     multi_json (1.10.1)
+    mysql (2.9.1)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    newrelic_rpm (3.9.9.275)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+    orm_adapter (0.5.0)
+    pdf-toolkit (1.1.0)
     polyglot (0.3.5)
+    premailer (1.8.3)
+      css_parser (>= 1.3.6)
+      htmlentities (>= 4.0.0, <= 4.3.1)
+    premailer-rails (1.8.0)
+      actionmailer (>= 3, < 5)
+      premailer (~> 1.7, >= 1.7.9)
+    prototype-rails (4.0.0)
+      rails (~> 4.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.0.0)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     rack (1.5.2)
     rack-test (0.6.3)
       rack (>= 1.0)
-    rails (4.0.4)
-      actionmailer (= 4.0.4)
-      actionpack (= 4.0.4)
-      activerecord (= 4.0.4)
-      activesupport (= 4.0.4)
+    rails (4.1.4)
+      actionmailer (= 4.1.4)
+      actionpack (= 4.1.4)
+      actionview (= 4.1.4)
+      activemodel (= 4.1.4)
+      activerecord (= 4.1.4)
+      activesupport (= 4.1.4)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.4)
-      sprockets-rails (~> 2.0.0)
-    railties (4.0.4)
-      actionpack (= 4.0.4)
-      activesupport (= 4.0.4)
+      railties (= 4.1.4)
+      sprockets-rails (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
+    railties (4.1.4)
+      actionpack (= 4.1.4)
+      activesupport (= 4.1.4)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.4.2)
+    rake (10.1.1)
     rdoc (4.2.0)
       json (~> 1.4)
+    ref (1.0.5)
+    rmagick (2.13.2)
+    ruby_parser (3.6.4)
+      sexp_processor (~> 4.1)
+    rubyntlm (0.4.0)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -80,39 +358,102 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    sexp_processor (4.4.5)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.2.1)
+    shoulda-kept-assign-to (1.0.1)
+      shoulda-matchers (>= 2.1.0)
+    shoulda-matchers (2.8.0)
+      activesupport (>= 3.0.0)
+    simple-navigation (3.11.0)
+      activesupport (>= 2.3.2)
+    slop (3.6.0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    sprockets-rails (2.0.1)
+    sprockets-rails (2.2.4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
-      sprockets (~> 2.8)
-    sqlite3 (1.3.10)
+      sprockets (>= 2.8, < 4.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.5.3)
-      coffee-rails
-    tzinfo (0.3.43)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
     uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    viewpoint (0.1.27)
+      handsoap
+      httpclient
+      icalendar (>= 1.1.5)
+      mail (>= 2.2.5)
+      nokogiri
+      rubyntlm
+    will_paginate (3.0.7)
+    yui-rails (3.13.0.0.3.0)
+      rails (>= 3.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm (= 4.0.8)
+  actionpack-page_caching
+  acts_as_versioned!
+  admin!
+  apply!
+  asee_utilities!
+  authenticated_system!
+  byebug
+  calendar_date_select!
+  capistrano (~> 2.15.5)
+  ckeditor
+  cms!
   coffee-rails (~> 4.0.0)
-  jbuilder (~> 1.2)
-  jquery-rails
-  rails (= 4.0.4)
+  deploy!
+  dynamic_form
+  extranet!
+  faker
+  file_column!
+  haml
+  helpdesk!
+  icalendar (= 1.1.6)
+  json
+  json_pure (= 1.7.4)
+  lp_select!
+  machinist (~> 2.0)
+  make_resourceful!
+  massive_match!
+  mixable_engines!
+  mocha
+  mysql
+  newrelic_rpm
+  premailer-rails
+  prototype-rails
+  pry
+  pry-byebug
+  rails (= 4.1.4)
+  rake (= 10.1.1)
+  reporting!
+  rmagick (= 2.13.2)
+  rtex!
   sass-rails (~> 4.0.2)
   sdoc
-  sqlite3
-  turbolinks
+  shoulda
+  shoulda-kept-assign-to
+  shoulda-matchers
+  therubyracer
   uglifier (>= 1.3.0)
+  viewpoint (= 0.1.27)
+  yui-rails

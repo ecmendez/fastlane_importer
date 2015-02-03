@@ -17,4 +17,4 @@
 
 # Other specific files or directories to be ignored
 /config/database.yml
-/.idea/*.*
+/.idea/**/*.*
