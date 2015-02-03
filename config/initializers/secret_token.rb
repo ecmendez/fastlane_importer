@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NsfgrfpRails4::Application.config.secret_key_base = '61a99d964d8f8baf3c2a05efacf4f13db626c21260e37a40a14ca8143490d601058f570a788b20c209ee44261d117e4940c79da8574baeab772566a32f8695c2'
+NSFGRFP::Application.config.secret_key_base = '61a99d964d8f8baf3c2a05efacf4f13db626c21260e37a40a14ca8143490d601058f570a788b20c209ee44261d117e4940c79da8574baeab772566a32f8695c2'
